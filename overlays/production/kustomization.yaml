@@ -9,3 +9,7 @@ resources:
 replicas:
   - name: nginx-app
     count: 3
+
+images:
+  - name: nginx
+    newTag: "1.28"
