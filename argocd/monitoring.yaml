@@ -17,6 +17,8 @@ spec:
       values: |
         crds:
           enabled: true
+          upgradeJob:
+            enabled: true
 
   destination:
     server: https://kubernetes.default.svc
