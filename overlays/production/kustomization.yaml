@@ -4,12 +4,6 @@ kind: Kustomization
 namespace: production
 
 resources:
-  - ../../base
-
-replicas:
-  - name: nginx-app
-    count: 3
-
-images:
-  - name: nginx
-    newTag: "1.28"
+  - rollout.yaml
+  - nginx-stable-service.yaml
+  - nginx-canary-service.yaml
